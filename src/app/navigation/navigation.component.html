@@ -4,14 +4,8 @@
   </div>
   <div class="col">
     <ul class="nav nav-pills nav-fill">
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="/">Introduction</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/experience">Professional Experience</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/skills">Skills</a>
+      <li class="nav-item" *ngFor="let tab of tabs">
+        <a class="nav-link" [class.active]="isActive(tab.path)" href="{{tab.path}}" >{{ tab.name }}</a>
       </li>
     </ul>
   </div>
