@@ -16,7 +16,7 @@ import {Router} from "@angular/router";
 export class NavigationComponent {
   tabs: ComponentType[] = [
     {
-      name: 'Introduction',
+      name: 'About Me',
       path: '/'
     },
     {
