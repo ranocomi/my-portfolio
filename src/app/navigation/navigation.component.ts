@@ -20,6 +20,10 @@ export class NavigationComponent {
       path: '/'
     },
     {
+      name: 'Education',
+      path: '/education'
+    },
+    {
       name: 'Experience',
       path: '/experience'
     },
