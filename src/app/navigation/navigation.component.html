@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col">
+    <h1 class="border-smooth">Sidar Dalli</h1>
+  </div>
+  <div class="col">
+    <ul class="nav nav-pills nav-fill">
+      <li class="nav-item" *ngFor="let tab of tabs">
+        <a class="nav-link" [class.active]="isActive(tab.path)" [style.color]="isActive(tab.path) ? 'white' : 'black'"
+           [style.background-color]="isActive(tab.path) ? 'black' : ''"
+           href="{{tab.path}}" >
+          {{ tab.name }}
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
