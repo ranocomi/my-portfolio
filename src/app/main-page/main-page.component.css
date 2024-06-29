@@ -1,4 +1,32 @@
 .container {
-  width: 50%;
-  margin-top: 20vh;
+  margin-top: 10vh;
+}
+
+.split-border {
+  padding: 10px;
+  position: relative;
+}
+
+.split-border::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 35%;
+  border-left: 2px solid black;
+  transform: translateX(-50%);
+}
+
+.row {
+  display: flex;
+}
+
+.image-col {
+  flex: 1;
+  margin-right: 5%;
+}
+
+.text-col {
+  flex: 2;
+  margin-left: 5%;
 }
